@@ -9,7 +9,10 @@ public class SpringAopApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(SpringAopApplication.class, args);
-
+        AopClass aopClass = context.getBean(AopClass.class);
+        aopClass.hello();
+        aopClass.printSomething("Mohammad Alamin");
+        System.out.println(aopClass.sum(10,20));
 
     }
 
