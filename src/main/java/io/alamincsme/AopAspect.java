@@ -1,2 +1,6 @@
-package io.alamincsme;public class AopAspect {
+package io.alamincsme;
+
+public class AopAspect {
+
+
 }
