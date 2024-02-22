@@ -36,4 +36,12 @@ public class AopAspect {
         logger.info("returing value : " + ans);
     }
 
+
+
+    @Before("execution(* AnotherClass+.*(..))")
+    public void beforeAntherClass(JoinPoint joinPoint) {
+        logger.info("Staring ..........." + joinPoint.getSignature().getName() );
+        logger.info("with parameter : " + Arrays.toString(joinPoint.getArgs()));
+    }
+
 }

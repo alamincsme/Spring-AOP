@@ -14,6 +14,11 @@ public class SpringAopApplication {
         aopClass.printSomething("Mohammad Alamin");
         System.out.println(aopClass.sum(10,20));
 
+        AnotherClass anotherClass = context.getBean(AnotherClass.class);
+        System.out.println(anotherClass.anotherMethod(10));
+
+       //learning success.
+
     }
 
 }

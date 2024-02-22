@@ -8,8 +8,8 @@ public class AopClass {
         System.out.println("Hello World");
     }
 
-    public void printSomething(String something) {
-        System.out.println(something);
+    public void printSomething(String message) {
+        System.out.println(message);
     }
 
     public int sum(int a, int b) {
